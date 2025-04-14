@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles.css'
+import React from "react";
+import { FaTelegram } from "react-icons/fa";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="container">
+      <video autoPlay loop muted playsInline className="background-video">
+        <source src="/images/gydro-bg.mp4" type="video/mp4" />
+      </video>
+      <div className="content">
+        <h1>Домен topnews.uz на продаже!</h1>
+        <p>По вопросам обращайтесь:</p>
+        <div className="main-blok">
+          <a href='https://t.me/akbarsoftowner'><FaTelegram className="main-icon" /></a>
+          <b>или</b>
+          <h3><a href='https://akbarsoft.uz/'>akbarsoft.uz</a></h3>
+        </div>
+      </div>
+    </main>
   );
 }
 
